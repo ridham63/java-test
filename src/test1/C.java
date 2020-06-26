@@ -13,13 +13,19 @@ public class C {
 		/*
 		* Time Complexity:
 		* 	Best Case: O(N)
-		* 	Avarage and worst case: O(N^2)
+		* 	Average and worst case: O(N^2)
 		*
 		* Space Complexity: O(1)
 		*
 		* */
+
+		// initial unsorted array
 		int[] arr = {15, 48, 2, 35, 18, 27, 35, 94, 43, 9};
 		System.out.print("Array : " + Arrays.toString(arr) + " \n");
+
+		// loop for n^2 time and sort element from left to right
+		// here after each loop left element should be smaller then right element
+		// as we just swapping space complexity is same as array size
 		for (int i = 0; i < arr.length - 1; i++) {
 			for (int j = 0; j < arr.length - (i + 1); j++) {
 				if (arr[j] > arr[j + 1]) {
@@ -39,7 +45,13 @@ public class C {
 		 * Space Complexity: O(N)
 		 *
 		 * */
+
+		// initial unsorted array
 		int[] array = {15, 48, 2, 35, 18, 27, 35, 94, 43, 9};
+
+		// divide array into smallest sub arrays and merge together
+		// sorting done when array are merged together
+		// as we devide into sub array, space complexity is higher
 		sort(array, 0, array.length - 1);
 		System.out.print("Array sorted : " + Arrays.toString(array) + " \n");
 	}
