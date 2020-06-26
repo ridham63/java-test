@@ -69,14 +69,18 @@ public class C {
 		}
 	}
 
+	// merging sub-arrays
 	public static void merge(int[] arr, int left, int middle, int right) {
+
+		// size of temporary arrays
 		int n1 = middle - left + 1;
 		int n2 = right - middle;
 
+		// create temporary arrays
 		int[] L = new int[n1];
 		int[] R = new int[n2];
 
-		// Copy sub-arrays to temp arrays
+		// Copy sub-arrays to temporary arrays
 		if (n1 >= 0) System.arraycopy(arr, left, L, 0, n1);
 		for (int j = 0; j < n2; ++j)
 			R[j] = arr[middle + 1 + j];
@@ -97,14 +101,14 @@ public class C {
 			k++;
 		}
 
-		// Copy elements of L[]
+		// Copy elements of L[] to array
 		while (i < n1) {
 			arr[k] = L[i];
 			i++;
 			k++;
 		}
 
-		// Copy elements of R[]
+		// Copy elements of R[] to array
 		while (j < n2) {
 			arr[k] = R[j];
 			j++;
