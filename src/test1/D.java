@@ -3,6 +3,7 @@ package test1;
 import java.util.Scanner;
 
 public class D {
+
 	// result stored in static variable
 	static double result = 0;
 
