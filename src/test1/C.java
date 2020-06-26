@@ -53,10 +53,12 @@ public class C {
 		// sorting done when array are merged together
 		// as we devide into sub array, space complexity is higher
 		sort(array, 0, array.length - 1);
+
 		System.out.print("Array sorted : " + Arrays.toString(array) + " \n");
 	}
 
 	public static void sort(int[] array, int left, int right) {
+		// recursive call to divide arrays into sub arrays
 		if (left < right) {
 			int middle = (left + right) / 2;
 
@@ -74,7 +76,7 @@ public class C {
 		int[] L = new int[n1];
 		int[] R = new int[n2];
 
-		// Copy data to temp arrays
+		// Copy sub-arrays to temp arrays
 		if (n1 >= 0) System.arraycopy(arr, left, L, 0, n1);
 		for (int j = 0; j < n2; ++j)
 			R[j] = arr[middle + 1 + j];
@@ -82,7 +84,7 @@ public class C {
 		// Initial indexes of first and second subarrays
 		int i = 0, j = 0;
 
-		// Initial index of merged subarry array
+		// Initial index of merged subarrays
 		int k = left;
 		while (i < n1 && j < n2) {
 			if (L[i] <= R[j]) {
