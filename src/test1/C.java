@@ -10,6 +10,14 @@ public class C {
 	}
 
 	public static void bubblesort() {
+		/*
+		* Time Complexity:
+		* 	Best Case: O(N)
+		* 	Avarage and worst case: O(N^2)
+		*
+		* Space Complexity: O(1)
+		*
+		* */
 		int[] arr = {15, 48, 2, 35, 18, 27, 35, 94, 43, 9};
 		System.out.print("Array : " + Arrays.toString(arr) + " \n");
 		for (int i = 0; i < arr.length - 1; i++) {
@@ -25,6 +33,12 @@ public class C {
 	}
 
 	public static void mergesort() {
+		/*
+		 * Time Complexity: O(N*logN)
+		 *
+		 * Space Complexity: O(N)
+		 *
+		 * */
 		int[] array = {15, 48, 2, 35, 18, 27, 35, 94, 43, 9};
 		sort(array, 0, array.length - 1);
 		System.out.print("Array sorted : " + Arrays.toString(array) + " \n");
