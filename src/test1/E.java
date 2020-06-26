@@ -2,6 +2,7 @@ package test1;
 
 public class E {
 }
+
 /* Login test cases */
 /*
 * 	Verify if user can login with valid credentials
