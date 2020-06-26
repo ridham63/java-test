@@ -4,10 +4,13 @@ public class A {
 	// defined two number that will either added or multiplied
 	static int num1 = 1;
 	static int num2 = 1;
+
 	// result stored in static variable
 	static int result = 0;
+
 	// iteration( or total steps) also stored in static variable
 	static int iteration = 0;
+
 	// isEven will bw used to check if whether two numbers will be added or multiplied
 	static boolean isEven = false;
 
